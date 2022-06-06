@@ -27,7 +27,7 @@ export class Model<T extends HasId> {
 		private sync: Sync<T>
 	) {}
 
-	on = this.events.on; //this can not be done if events was initilialized inside the construcor
+	on = this.events.on; //this can not be done if events was initilialized outisde the construcor inline with the type definations
 
 	trigger = this.events.trigger;
 
